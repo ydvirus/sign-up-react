@@ -1,0 +1,71 @@
+
+
+.sign-up-with:before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #FF5349;
+    
+  }
+
+  .sign-up-with{
+    position: relative;
+    max-width: 300px;
+    color: #FF5349;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  input:focus{
+    outline: none;
+  }
+
+  input.signup-input{
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #eeeeee;
+    background-color: #fafafa;
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .submit-button{
+    height: 64px;
+    float:left;
+    
+  }
+
+  .MuiButton-startIcon{
+    margin: 0 !important;
+  }
+
+  .have-account{
+    float: left;
+    max-width: fit-content;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .sign-in-link{
+    color: #FF5349;
+  }
+
+  .rocket-launch-image{
+    /* height: 100%; */
+    max-width: 100%;
+    height: 650px;
+    
+  }
+
+  .input-labels{
+    float: left;
+    width: max-content;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+  }
