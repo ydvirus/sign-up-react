@@ -6,7 +6,6 @@ import {
   Stack,
   Box
 } from "@mui/material";
-import rocketImage from "../asset/rocket-launch.png";
 import "./Login.css";
 import EastIcon from "@mui/icons-material/East";
 import { Link, useNavigate } from "react-router-dom";
@@ -38,6 +37,7 @@ const Login = () => {
       }
     });
   };
+
   const submit = (event) => {
     event.preventDefault();
     console.log(loginData);
@@ -67,7 +67,7 @@ const Login = () => {
       elevation={4}
     >
       <Grid container direction={"row"}>
-        <Grid item sm={6}>
+        <Grid item sm={12} md={6} >
           <Stack spacing={2}>
             <Box
               component={"h1"}
@@ -85,11 +85,12 @@ const Login = () => {
 
           <form autoComplete="off" onSubmit={submit}>
             <Grid container my={3} rowSpacing={3} columnSpacing={3}>
-              <Grid item xs={12} sm={8}>
+              <Grid item xs={12} sm={6} md={6}>
                 <Stack direction={"column"} spacing={1}>
-                  <label className="input-labels">Email</label>
+                  <label htmlFor="email" className="input-labels">Email</label>
                   <input
                     type="email"
+                    id="email"
                     value={loginData.email}
                     onChange={handleChange}
                     className="signup-input"
@@ -98,10 +99,11 @@ const Login = () => {
                   />
                 </Stack>
               </Grid>
-              <Grid item xs={12} sm={8}>
+              <Grid item xs={12} sm={6} md={6}>
                 <Stack direction={"column"} spacing={1}>
-                  <label className="input-labels">Password</label>
+                  <label htmlFor="password" className="input-labels">Password</label>
                   <input
+                    id="password"
                     type="password"
                     value={loginData.password}
                     onChange={handleChange}
@@ -143,10 +145,10 @@ const Login = () => {
           </Stack>
         </Grid>
 
-        <Grid item sm={6}>
+        <Grid item sm={12} md={6} className="right-content">
           <Box>
             <img
-              src={rocketImage}
+              src={"https://upload.wikimedia.org/wikipedia/commons/2/22/Noun_598870_cc_rocket.svg"}
               className="rocket-launch-image"
               alt="rocketImage"
             />
